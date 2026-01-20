@@ -6,5 +6,13 @@ if result:
 else:
     print("no match found")
 
-searchresult=re.search("python",text)
+searchresult=re.search("powerful",text)
 print(searchresult.group())
+print(searchresult.start())
+print(searchresult.end())
+
+email="admin@gmail.com"
+if re.match(r"[a-zA-Z]+@",email):
+    print("Valid Start")
+else:
+    print("no Valid Start")
